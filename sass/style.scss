@@ -2,9 +2,14 @@
 img{
     max-width:100%;
 }
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+} 
 header{
     .header-top{
-        background-color: #1c1c1c;;
+        background-color: #1c1c1c;
+        font-size: 14px;
         .container{
             .row{
                 ul{
@@ -15,27 +20,65 @@ header{
                     }
                 }
                 .top-left{
-                    ul{
-                        li{
-                            margin-right:45px;
-                            a{
-                                display: inline-block;
-                                padding: 20px 0;
+                        ul{
+                            li{
+                                margin-right:45px;
+                                a{
+                                    display: inline-block;
+                                    padding: 20px 0;
+                                    transition: all 0.3s;
+                                }
+                            }
+                            li:hover a{
+                                color: #2cbdb8;
                             }
                         }
-                    }
                 }
                 .top-right{
                     justify-content: flex-end;
                     .lang-options{
+                        cursor: pointer;
                         margin-right: 20px;
                         padding: 20px;
+                        position: relative;
+                            i{
+                                font-size: 10px;
+                            }
+                            img{
+                                margin-right: 2px;
+                            }
+                        .sub-menu{
+                            position: absolute;
+                            z-index: 9;
+                            background-color: #fff;
+                            border: 1px solid #e5e5e5;
+                            opacity:0;
+                            visibility: hidden;
+                            margin-top:50px;
+                            transition: all 0.3s;
+                            a{
+                                display: block;
+                                font-size: 14px;
+                                color: #222;
+                                padding: 10px 20px;
+                                background-color: #fff;
+                                transition: all 0.3s;
+                            }
+                            a:hover{
+                                color:#2cbdb8;
+                            }
+                        }
+                    }
+                    .lang-options:hover .sub-menu{
+                        margin-top: 10px;
+                        opacity: 1;
+                        visibility: visible;
                     }
                     a{
                         color: #fff;
                         text-decoration: none;
-                        padding: 20px;
-                        background-color: rgb(29, 216, 216);
+                        padding: 20px 30px;
+                        background-color: #2cbdb8;
                     } 
                     i,span{
                         color: #fff;
@@ -63,14 +106,24 @@ header{
                     align-items: center;
                     margin-left:45px;
                     .icon{
-                        border: 1px solid teal;
-                        padding:10px;
+                        border: 2px solid #d5f2f1;
+                        padding: 10px 15px;
                         margin-right: 14px;
+                        i{
+                            color: #2cbdb8;
+                            font-size: 20px;
+                        }
                     }
                     .content{
                         p{
                             margin-bottom:0;
                         } 
+                        span{
+                            font-size: 14px;
+                            color: #707079;
+                            line-height: 15px;
+                            display: inline-block;
+                        }
                     }
                 }
             }
@@ -85,7 +138,7 @@ header{
             }
             .div-button{
                 display: inline-block;
-                border: 1px solid teal;
+                border: 1px solid #2cbdb8;
                 padding: 5px 10px;
             }
         }
