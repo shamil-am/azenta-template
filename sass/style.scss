@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+img{
+    max-width:100%;
+}
+header{
+    .header-top{
+        background-color: #1c1c1c;;
+        .container{
+            .row{
+                ul{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+                .top-left{
+                    ul{
+                        li{
+                            margin-right:45px;
+                            a{
+                                display: inline-block;
+                                padding: 20px 0;
+                            }
+                        }
+                    }
+                }
+                .top-right{
+                    justify-content: flex-end;
+                    .lang-options{
+                        margin-right: 20px;
+                        padding: 20px;
+                    }
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 20px;
+                        background-color: rgb(29, 216, 216);
+                    } 
+                    i,span{
+                        color: #fff;
+                        text-decoration: none;
+                    }                    
+                    span:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .header-bottom{
+        .row{
+            align-items: center;
+            .logo{
+                padding:36px 0;
+            }
+            ul{
+                list-style: none;
+                justify-content: flex-end;
+                li{
+                    display:flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left:45px;
+                    .icon{
+                        border: 1px solid teal;
+                        padding:10px;
+                        margin-right: 14px;
+                    }
+                    .content{
+                        p{
+                            margin-bottom:0;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    .hiddentop{
+        .row{
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                padding: 36px 0;
+            }
+            .div-button{
+                display: inline-block;
+                border: 1px solid teal;
+                padding: 5px 10px;
+            }
+        }
+    }
+}

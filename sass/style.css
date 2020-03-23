@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+img {
+  max-width: 100%;
+}
+
+header .header-top {
+  background-color: #1c1c1c;
+}
+
+header .header-top .container .row ul {
+  list-style: none;
+}
+
+header .header-top .container .row ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .header-top .container .row .top-left ul li {
+  margin-right: 45px;
+}
+
+header .header-top .container .row .top-left ul li a {
+  display: inline-block;
+  padding: 20px 0;
+}
+
+header .header-top .container .row .top-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header-top .container .row .top-right .lang-options {
+  margin-right: 20px;
+  padding: 20px;
+}
+
+header .header-top .container .row .top-right a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  background-color: #1dd8d8;
+}
+
+header .header-top .container .row .top-right i, header .header-top .container .row .top-right span {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .header-top .container .row .top-right span:hover {
+  cursor: pointer;
+}
+
+header .header-bottom .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-bottom .row .logo {
+  padding: 36px 0;
+}
+
+header .header-bottom .row ul {
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header-bottom .row ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 45px;
+}
+
+header .header-bottom .row ul li .icon {
+  border: 1px solid teal;
+  padding: 10px;
+  margin-right: 14px;
+}
+
+header .header-bottom .row ul li .content p {
+  margin-bottom: 0;
+}
+
+header .hiddentop .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .hiddentop .row .logo {
+  padding: 36px 0;
+}
+
+header .hiddentop .row .div-button {
+  display: inline-block;
+  border: 1px solid teal;
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=style.css.map */
