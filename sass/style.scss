@@ -249,7 +249,7 @@ section.search-home{
             }
         }
     }
-    .search{
+    .row.search{
         padding-bottom: 30px;
         -webkit-box-shadow: -1px -1px 21px -1px rgba(0,0,0,0.75);
         -moz-box-shadow: -1px -1px 21px -1px rgba(0,0,0,0.75);
@@ -273,17 +273,10 @@ section.search-home{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            i{
+                transition: all 0.3s;
+            }
             .submenu{
-                ul{
-                background: #f2f4f5;
-                border: 1px solid #ebebeb;
-                font-size: 14px;
-                color: #000;
-                font-weight: 900;
-                li{
-                    padding: 5px 10px;
-                }
-                }
                 padding: 10px 15px;
                 position: absolute;
                 z-index: 99;
@@ -293,9 +286,16 @@ section.search-home{
                 opacity:0;
                 visibility: hidden;
                 transition: all 0.3s;
-            }
-            i{
-                transition: all 0.3s;
+                ul{
+                    background: #f2f4f5;
+                    border: 1px solid #ebebeb;
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: 900;
+                    li{
+                        padding: 5px 10px;
+                    }
+                }
             }
         }
         
@@ -309,6 +309,7 @@ section.search-home{
         }
     }
 }
+
 
 
 
