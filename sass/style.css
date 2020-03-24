@@ -13,6 +13,10 @@ ul {
   list-style: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 header .header-top {
   background-color: #1c1c1c;
   font-size: 14px;
@@ -273,6 +277,10 @@ section.carousel .container .row .house-image div:last-child {
   border-right: 3px solid #fff;
 }
 
+section.search-home {
+  margin-top: -50px;
+}
+
 section.search-home .row .col-6 {
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -288,6 +296,88 @@ section.search-home .row .col-6 .find-y-home {
 section.search-home .row .col-6 .house-for-sell {
   background-color: #2c2c2c;
   padding: 13px 30px;
+}
+
+section.search-home .search {
+  padding-bottom: 30px;
+  -webkit-box-shadow: -1px -1px 21px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px -1px 21px -1px rgba(0, 0, 0, 0.75);
+}
+
+section.search-home .search .col-12 {
+  margin-top: 30px;
+}
+
+section.search-home .search a:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+section.search-home .search a:hover .selector i {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+section.search-home .search .selector {
+  background: #f2f4f5;
+  border: 1px solid #ebebeb;
+  color: #707079;
+  padding: 10px 15px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.search-home .search .selector .submenu {
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 99;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.search-home .search .selector .submenu ul {
+  background: #f2f4f5;
+  border: 1px solid #ebebeb;
+  font-size: 14px;
+  color: #000;
+  font-weight: 900;
+}
+
+section.search-home .search .selector .submenu ul li {
+  padding: 5px 10px;
+}
+
+section.search-home .search .selector i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.search-home .search .search-prop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  background-color: #2cbdb8;
+  color: #fff;
 }
 
 @media (min-width: 240px) and (max-width: 768px) {
