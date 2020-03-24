@@ -5,7 +5,12 @@ img{
 *{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+}
+ul{
+    list-style: none;
 } 
+$maincolor: #2cbdb8;
+
 header{
     .header-top{
         background-color: #1c1c1c;
@@ -30,7 +35,7 @@ header{
                                 }
                             }
                             li:hover a{
-                                color: #2cbdb8;
+                                color: $maincolor;
                             }
                         }
                 }
@@ -65,7 +70,7 @@ header{
                                 transition: all 0.3s;
                             }
                             a:hover{
-                                color:#2cbdb8;
+                                color: $maincolor;
                             }
                         }
                     }
@@ -78,7 +83,7 @@ header{
                         color: #fff;
                         text-decoration: none;
                         padding: 20px 30px;
-                        background-color: #2cbdb8;
+                        background-color: $maincolor;
                     } 
                     i,span{
                         color: #fff;
@@ -110,7 +115,7 @@ header{
                         padding: 10px 15px;
                         margin-right: 14px;
                         i{
-                            color: #2cbdb8;
+                            color: $maincolor;
                             font-size: 20px;
                         }
                     }
@@ -138,8 +143,68 @@ header{
             }
             .div-button{
                 display: inline-block;
-                border: 1px solid #2cbdb8;
+                border: 1px solid $maincolor;
                 padding: 5px 10px;
+            }
+        }
+    }
+}
+section.carousel{
+    padding: 125px 0;
+    background-image: url(../img/hero-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    .container{
+        i{
+            color: $maincolor;
+        }
+        .row{
+            justify-content: center;
+            .col-10{
+                text-align: center;
+                .house-info{
+                    background-color: rgba(28,28,28,.6);
+                    padding: 44px 0;
+                    
+                }
+                .house-name{
+                    span{
+                        font-size: 14px;
+                        color: #aaaab3;
+                    }
+                    h2{
+                        font-size: 44px;
+                        color: #fff;
+                        font-weight: 600;
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 22px;
+                        color: #fff;
+                        font-weight: 600;
+                        span{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .house-properties{
+                    margin-top: 45px;
+                   ul{
+                       justify-content: center;
+                       li{
+                           margin-right: 65px;
+                       }
+                       i{
+                           font-size: 24px;
+                       }
+                       p{
+                        font-size: 14px;
+                        color: #fff;
+                       }
+                   }
+                }
             }
         }
     }
