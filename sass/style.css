@@ -259,12 +259,55 @@ section.carousel .container .row .col-10 .house-properties ul p {
   color: #fff;
 }
 
+section.carousel .container .row .house-image {
+  margin-top: 100px;
+}
+
+section.carousel .container .row .house-image div {
+  border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+section.carousel .container .row .house-image div:last-child {
+  border-right: 3px solid #fff;
+}
+
+section.search-home .row .col-6 {
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+section.search-home .row .col-6 .find-y-home {
+  background-color: #2cbdb8;
+  padding: 13px 30px;
+}
+
+section.search-home .row .col-6 .house-for-sell {
+  background-color: #2c2c2c;
+  padding: 13px 30px;
+}
+
 @media (min-width: 240px) and (max-width: 768px) {
   .house-properties li {
     margin-right: 25px !important;
   }
   .house-properties li:last-child {
     margin: 0 !important;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 480px) {
+  .house-image {
+    display: none !important;
+  }
+  .search-home .col-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
