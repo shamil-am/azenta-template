@@ -246,6 +246,10 @@ section.carousel .container .row .col-10 .house-properties ul li {
   margin-right: 65px;
 }
 
+section.carousel .container .row .col-10 .house-properties ul li:last-child {
+  margin: 0;
+}
+
 section.carousel .container .row .col-10 .house-properties ul i {
   font-size: 24px;
 }
@@ -253,5 +257,14 @@ section.carousel .container .row .col-10 .house-properties ul i {
 section.carousel .container .row .col-10 .house-properties ul p {
   font-size: 14px;
   color: #fff;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  .house-properties li {
+    margin-right: 25px !important;
+  }
+  .house-properties li:last-child {
+    margin: 0 !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
